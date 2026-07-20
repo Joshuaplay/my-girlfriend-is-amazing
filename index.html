@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gate">
+      <h1>Hey you 💛</h1>
+      <p>Enter the password to continue:</p>
+      <input type="password" id="passwordInput" placeholder="Password" />
+      <button onclick="checkPassword()">Enter</button>
+      <p id="errorMsg" style="color: red; display: none">
+        Wrong password, try again.
+      </p>
+    </div>
+
+    <div id="mainContent" style="display: none">
+      <h1>Welcome in!</h1>
+      <p>This is where everything will live.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
