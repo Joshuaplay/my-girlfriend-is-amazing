@@ -60,3 +60,42 @@ body {
 .menu-button:hover {
   background: #e07a8b;
 }
+
+Thought process
+Thought process
+Add this to the bottom of style.css:
+
+css
+/* Layout for individual pages (photos, gifts, etc.) */
+.page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ee9ca7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Photo gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
