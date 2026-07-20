@@ -70,11 +70,18 @@ body {
 }
 
 .back-link {
+  position: fixed;
+  top: 16px;
+  left: 16px;
   display: inline-block;
-  margin-bottom: 20px;
+  padding: 8px 16px;
+  background: white;
   color: #ee9ca7;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
 }
 
 .back-link:hover {
