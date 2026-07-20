@@ -61,11 +61,6 @@ body {
   background: #e07a8b;
 }
 
-Thought process
-Thought process
-Add this to the bottom of style.css:
-
-css
 /* Layout for individual pages (photos, gifts, etc.) */
 .page {
   max-width: 900px;
@@ -86,11 +81,7 @@ css
   text-decoration: underline;
 }
 
-Thought process
-Thought process
-Clean, good. Now the CSS — add this to style.css (you can replace the existing .gallery and .gallery img rules entirely with this):
-
-css
+/* Scattered collage-style photo layout */
 .gallery {
   column-count: 4;
   column-gap: 16px;
