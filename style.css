@@ -37,3 +37,26 @@ body {
 #gate button:hover {
   background: #e07a8b;
 }
+
+/* Styling for the buttons that link to each section (gifts, photos, etc.) */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ee9ca7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.menu-button:hover {
+  background: #e07a8b;
+}
