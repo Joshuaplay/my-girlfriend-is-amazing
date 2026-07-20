@@ -86,17 +86,50 @@ css
   text-decoration: underline;
 }
 
-/* Photo gallery grid */
+Thought process
+Thought process
+Clean, good. Now the CSS — add this to style.css (you can replace the existing .gallery and .gallery img rules entirely with this):
+
+css
+/* Scattered collage-style photo layout */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
+  gap: 20px;
+  padding: 20px;
 }
 
-.gallery img {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
+.photo-frame {
   background: white;
-  border-radius: 8px;
+  padding: 8px 8px 20px 8px;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.photo-frame:hover {
+  transform: scale(1.08) rotate(0deg) !important;
+  z-index: 10;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 2px;
+}
+
+.photo-medium {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.photo-large {
+  grid-column: span 3;
+  grid-row: span 3;
 }
