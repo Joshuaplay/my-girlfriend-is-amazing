@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+}
+
+.centered {
   height: 100vh;
   display: flex;
   align-items: center;
