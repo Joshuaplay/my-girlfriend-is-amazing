@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#gate {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+#gate input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+#gate button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #ee9ca7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#gate button:hover {
+  background: #e07a8b;
+}
