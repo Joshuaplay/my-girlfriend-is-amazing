@@ -3,15 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Last last Seen</title>
+    <title>Last Seen</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <a href="index.html" class="back-link">&larr; Back</a>
     <div class="page">
       <h1>Last Seen 💕</h1>
-      <div id="dayCount" class="big-counter"></div>
-      <p id="dayLabel"></p>
+      <div class="timer-grid">
+        <div class="timer-unit">
+          <div id="days" class="timer-number">0</div>
+          <div class="timer-label">Days</div>
+        </div>
+        <div class="timer-unit">
+          <div id="hours" class="timer-number">0</div>
+          <div class="timer-label">Hours</div>
+        </div>
+        <div class="timer-unit">
+          <div id="minutes" class="timer-number">0</div>
+          <div class="timer-label">Minutes</div>
+        </div>
+        <div class="timer-unit">
+          <div id="seconds" class="timer-number">0</div>
+          <div class="timer-label">Seconds</div>
+        </div>
+      </div>
       <button onclick="resetLastSeen()" class="reset-button">
         We Hung Out!
       </button>

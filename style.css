@@ -274,11 +274,32 @@ body {
   background: #d4f5d4;
 }
 
-.big-counter {
-  font-size: 80px;
+.timer-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.timer-unit {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  min-width: 80px;
+}
+
+.timer-number {
+  font-size: 48px;
   font-weight: bold;
   color: #ee9ca7;
-  margin: 20px 0;
+}
+
+.timer-label {
+  font-size: 14px;
+  color: #999;
+  margin-top: 4px;
 }
 
 .reset-button {
