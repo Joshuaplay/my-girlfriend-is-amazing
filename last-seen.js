@@ -21,10 +21,16 @@ function updateDisplay() {
 
   const seconds = totalSeconds
 
-  document.getElementById('days').textContent = days
-  document.getElementById('hours').textContent = hours
-  document.getElementById('minutes').textContent = minutes
-  document.getElementById('seconds').textContent = seconds
+  document.getElementById('days').textContent = String(days).padStart(2, '0')
+  document.getElementById('hours').textContent = String(hours).padStart(2, '0')
+  document.getElementById('minutes').textContent = String(minutes).padStart(
+    2,
+    '0',
+  )
+  document.getElementById('seconds').textContent = String(seconds).padStart(
+    2,
+    '0',
+  )
 }
 
 function resetLastSeen() {
