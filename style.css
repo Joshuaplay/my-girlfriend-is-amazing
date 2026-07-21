@@ -17,6 +17,8 @@ body {
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
 }
 
 #gate input {
@@ -132,8 +134,8 @@ body {
   aspect-ratio: 1 / 1.6;
   object-position: top;
 }
-//Floating Hearts
 
+/* Floating hearts on the password screen */
 #hearts {
   position: fixed;
   top: 0;
@@ -163,7 +165,51 @@ body {
   }
 }
 
-#gate {
-  position: relative;
-  z-index: 1;
+/* Grid of cards on the main menu */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.menu-card.disabled {
+  opacity: 0.6;
+}
+
+.menu-card-image {
+  height: 100px;
+  background: #f4c6ce;
+}
+
+.menu-card-title {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+.soon {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  color: #999;
+  margin-top: 2px;
 }
