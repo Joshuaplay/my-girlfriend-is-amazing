@@ -259,3 +259,9 @@ body {
   font-weight: bold;
   font-size: 16px;
 }
+
+.future-thumb {
+  background-image: url('images/748437758_1081775017525675_7758393693449044019_n.jpg');
+  background-size: cover;
+  background-position: center;
+}
