@@ -223,3 +223,9 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.photos-thumb {
+  background-image: url('images/747624978_2194361171107147_3439636135430508718_n.jpg');
+  background-size: cover;
+  background-position: center;
+}
