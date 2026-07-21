@@ -265,3 +265,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.goal-card {
+  cursor: pointer;
+}
+
+.goal-card.completed {
+  background: #d4f5d4;
+}
