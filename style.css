@@ -273,3 +273,26 @@ body {
 .goal-card.completed {
   background: #d4f5d4;
 }
+
+.big-counter {
+  font-size: 80px;
+  font-weight: bold;
+  color: #ee9ca7;
+  margin: 20px 0;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ee9ca7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reset-button:hover {
+  background: #e07a8b;
+}
