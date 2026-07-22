@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cycle Snacks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="index.html" class="back-link">&larr; Back</a>
+  <div class="page">
+    <h1>🌙 Cycle Snacks</h1>
+
+    <button id="periodButton" onclick="togglePeriod()" class="period-button">⚠️ I'm On My Period ⚠️</button>
+    <p id="periodStatus"></p>
+
+    <div class="snack-note">
+      🚧 Snacks will be available after your boyfriend gets a job 🚧
+    </div>
+
+    <div class="budget-section">
+      <label>Set monthly budget: $</label>
+      <input type="number" id="budgetInput" step="0.01" />
+      <button onclick="saveBudget()" class="reset-button">Save Budget</button>
+      <p>Budget: $<span id="budgetTotal">0.00</span></p>
+      <p>Remaining: $<span id="budgetRemaining">0.00</span></p>
+    </div>
+
+    <div class="snack-list">
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 6.00)" />
+        Homemade Spring Rolls — $6.00
+      </label>
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 4.50)" />
+        Crispy M&Ms — $4.50
+      </label>
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 12.00)" />
+        Sushi — $12.00
+      </label>
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 8.00)" />
+        Chicken Nuggets — $8.00
+      </label>
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 7.50)" />
+        Sticky Date Pudding — $7.50
+      </label>
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 4.00)" />
+        Redbull — $4.00
+      </label>
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 4.50)" />
+        Chips — $4.50
+      </label>
+      <label class="snack-item">
+        <input type="checkbox" onchange="toggleSnack(this, 6.00)" />
+        Hot Chips — $6.00
+      </label>
+    </div>
+
+    <div class="suggestion-box">
+      <label>Suggest something else:</label>
+      <input type="text" id="suggestionInput" placeholder="Type a snack idea..." />
+      <button onclick="saveSuggestion()" class="reset-button">Submit</button>
+    </div>
+  </div>
+
+  <script src="cycle-snacks.js"></script>
+</body>
+</html>
