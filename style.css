@@ -414,3 +414,9 @@ body {
 body.period-mode {
   background: #c0392b;
 }
+
+.cycle-thumb {
+  background-image: url('images/751001089_1008611448609216_2460574512340707518_n.jpg');
+  background-size: cover;
+  background-position: center;
+}
