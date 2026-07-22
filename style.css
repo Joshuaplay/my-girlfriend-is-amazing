@@ -390,3 +390,27 @@ body {
 .period-button:hover {
   background: #b71c1c;
 }
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.warning-emoji {
+  position: fixed;
+  top: 0;
+  font-size: 32px;
+  animation: fallDown linear forwards;
+  pointer-events: none;
+  z-index: 999;
+}
+
+body.period-mode {
+  background: #c0392b;
+}
