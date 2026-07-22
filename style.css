@@ -327,3 +327,48 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.tracker-section,
+.budget-section,
+.suggestion-box {
+  margin: 20px 0;
+}
+
+.tracker-section input,
+.budget-section input,
+.suggestion-box input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin: 0 8px;
+}
+
+.snack-note {
+  background: #fff3cd;
+  color: #856404;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.snack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.snack-item {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
